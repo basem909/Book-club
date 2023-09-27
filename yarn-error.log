@@ -1,0 +1,36 @@
+Arguments: 
+  /opt/homebrew/Cellar/node/19.5.0/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add rails
+
+PATH: 
+  ./node_modules/.bin:/Users/basemshams/.rbenv/shims:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:./node_modules/.bin:/Users/basemshams/.rbenv/shims:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.1.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.5.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/rails/-/rails-4.1.0-beta.tgz: Request failed "404 Not Found"
+      at ResponseError.ExtendableBuiltin (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:696:66)
+      at new ResponseError (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:802:124)
+      at Request.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:66215:16)
+      at Request.emit (node:events:512:28)
+      at module.exports.Request.onRequestResponse (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:141767:10)
+      at ClientRequest.emit (node:events:512:28)
+      at HTTPParser.parserOnIncomingClient (node:_http_client:694:27)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+      at TLSSocket.socketOnData (node:_http_client:536:22)
+      at TLSSocket.emit (node:events:512:28)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
