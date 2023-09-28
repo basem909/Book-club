@@ -8,7 +8,7 @@ RSpec.describe Book, type: :model do
       genre: 'Fantasy',
       publication_year: 1954
     )
-    
+
     expect(book).to be_valid
   end
 

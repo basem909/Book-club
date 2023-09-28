@@ -13,8 +13,10 @@ RSpec.describe BooksController, type: :controller do
     end
 
     it 'returns a list of books' do
-      book1 = Book.create(title: 'Book 1', author: 'Author 1', genre: 'Genre 1', publication_year: 2020)
-      book2 = Book.create(title: 'Book 2', author: 'Author 2', genre: 'Genre 2', publication_year: 2021)
+      Book.create(title: 'Book 1', author: 'Author 1', genre: 'Genre 1',
+                  publication_year: 2020)
+      Book.create(title: 'Book 2', author: 'Author 2', genre: 'Genre 2',
+                  publication_year: 2021)
 
       get :index
       parsed_response = JSON.parse(response.body)
@@ -24,7 +26,10 @@ RSpec.describe BooksController, type: :controller do
   end
 
   describe 'GET #show' do
-    let!(:book) { Book.create(title: 'The Lord of the Rings', author: 'J.R.R. Tolkien', genre: 'Fantasy', publication_year: 1954) }
+    let!(:book) do
+      Book.create(title: 'The Lord of the Rings', author: 'J.R.R. Tolkien', genre: 'Fantasy',
+                  publication_year: 1954)
+    end
 
     it 'returns a successful response' do
       get :show, params: { id: book.id, search_by: 'title', search_value: 'The Lord of the Rings' }
@@ -64,6 +69,5 @@ RSpec.describe BooksController, type: :controller do
       expect(response).to have_http_status(:ok)
       expect(Book.count).to eq(1)
     end
-
   end
 end
